@@ -1,73 +1,5 @@
 
-[ style="background-color: #f2f2f2;"]
  
-table td:first-child {
-    width: 150px;
-}
-table.clickable td {
-    max-width:  150px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-table.clickable {
- border-collapse: collapse;
-}
-table.clickable td {
-  border: 1px solid black;
-  font-size: 16px;
-}
-table.clickable td:not(:first-child) {
-  width: 50px;
-  text-align: center;
-  color: #c1bdbd;
-  cursor: pointer;
-  transition: ease-in-out all .25s;
-}
-table.clickable td:nth-child(2).active {
-  background-color: green;
-  color: white;
-  font-size: 12px;
-}
-table.clickable td:nth-child(2).active::before {
-  content: "OK";
-}
-table.clickable td:nth-child(3).active {
-  background-color: red;
-  color: white;
-  font-size: 12px;
-}
-table.clickable td:nth-child(3).active::before {
-  content: "Rec";
-}
-table.clickable td:nth-child(4).active {
-  background-color:  #5caff2;
-  color: black;
-  font-size: 12px;
-}
-table.clickable td:nth-child(4).active::before {
-  content: "Due";
-}
-table.clickable td:nth-child(5).active {
-  background-color: #ef6c00;
-  color: black;
-  font-size: 12px;
-}
-table.clickable td:nth-child(5).active::before {
-  content: "NA";
-}
-
-/* This CSS is only set for printing */
-@media print {
-  table.clickable {
-    /* Apply a grayscale filter when printing */
-    filter: grayscale();
-    /* These are needed to ensure the background colour is maintained when printing */
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-}
-    
     input[type='text']:hover {
       background: #a0ebc1;
       cursor: pointer;
@@ -166,11 +98,7 @@ table.clickable td:nth-child(5).active::before {
       padding: 0;
     }
     
-    table tr {
-      height: 40px;
-      border: 1px solid black;
-    }
-    
+       
     .mid {
       margin: auto;
       margin-top: 10%;
